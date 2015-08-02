@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/blabla"
+        android:layout_width="fill_parent"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:onClick="myClickHandler"
+        android:text="@string/checkit_url" />
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/blabla" >
+    </TextView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_post"
+        android:layout_margin="15dp"
+        android:onClick="newPost"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_width="fill_parent" >-->
+
+    <!--<LinearLayout android:id="@+id/blabla"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/myUrl"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:hint="@string/checkit_url" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="myClickHandler"-->
+            <!--android:text="@string/button_submit" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/myText"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_below="@+id/blabla" >-->
+    <!--</TextView>-->
+
+<!--</RelativeLayout>-->
