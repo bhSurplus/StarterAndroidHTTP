@@ -23,6 +23,10 @@
             android:name=".ResponseActivity"
             android:label="@string/title_activity_response" >
         </activity>
+        <activity
+            android:name=".PostHttpActivity"
+            android:label="@string/title_activity_post_http" >
+        </activity>
     </application>
 
 </manifest>

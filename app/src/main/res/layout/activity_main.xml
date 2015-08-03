@@ -1,65 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
-    android:orientation="vertical"
-    android:gravity="center" >
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/blabla"
+    <ScrollView
         android:layout_width="fill_parent"
-        android:layout_margin="15dp"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_layout"
         android:layout_height="wrap_content"
-        android:onClick="myClickHandler"
-        android:text="@string/checkit_url" />
-
-    <TextView
-        android:id="@+id/myText"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/blabla" >
-    </TextView>
+        android:orientation="vertical" >
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/new_post"
-        android:layout_margin="15dp"
-        android:onClick="newPost"
-        android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/blabla"
+            android:layout_width="fill_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:onClick="checkItUrl"
+            android:text="@string/checkit_url" />
 
-</RelativeLayout>
-
-<!--<RelativeLayout-->
-    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--android:layout_height="fill_parent"-->
-    <!--android:layout_width="fill_parent" >-->
-
-    <!--<LinearLayout android:id="@+id/blabla"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="horizontal" >-->
-
-        <!--<EditText-->
-            <!--android:id="@+id/myUrl"-->
-            <!--android:layout_width="0dp"-->
+        <!--<ScrollView-->
+            <!--android:layout_width="fill_parent"-->
             <!--android:layout_height="wrap_content"-->
-            <!--android:layout_weight="1"-->
-            <!--android:hint="@string/checkit_url" />-->
+            <!--android:layout_below="@+id/blabla" >-->
+            <TextView
+                android:id="@+id/myText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="10000"
+                android:scrollbars="vertical"
+                android:layout_below="@id/blabla"/>
+        <!--</ScrollView>-->
 
-        <!--<Button-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:onClick="myClickHandler"-->
-            <!--android:text="@string/button_submit" />-->
-    <!--</LinearLayout>-->
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_post"
+            android:layout_margin="15dp"
+            android:onClick="newPost"
+            android:layout_below="@id/myText"/>
 
-    <!--<TextView-->
-        <!--android:id="@+id/myText"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_below="@+id/blabla" >-->
-    <!--</TextView>-->
+    </RelativeLayout>
 
-<!--</RelativeLayout>-->
+    </ScrollView>
+
+</LinearLayout>

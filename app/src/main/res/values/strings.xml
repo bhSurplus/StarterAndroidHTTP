@@ -7,6 +7,13 @@
 
     <string name="checkit_url">check it url</string>
     <string name="new_post">new post</string>
+    <string name="submit_button">submit</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_post_http">PostHttpActivity</string>
+
+    <string name="post_title">title</string>
+    <string name="post_body">body</string>
+    <string name="post_link">link</string>
+    <string name="post_thumbnail">thumbnail</string>
 
 </resources>
